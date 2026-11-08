@@ -365,7 +365,7 @@ function Education() {
         <h2>
           The best learning
           <br />
-          <span>happens by doingx</span>
+          <span>happens by doing</span>
         </h2>
 
         <p>

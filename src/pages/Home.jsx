@@ -2,17 +2,14 @@
 import { Link } from "react-router-dom";
 import "../styles/Home.css";
 
+import profileImage from "../assets/WhatsApp Image 2026-11-08 at 12.12.58.jpeg";
+
 function Home() {
   return (
     <main className="story-home">
-
       <div className="home-content">
-
         <div className="home-intro">
-
-          <h1>
-            Shantanu Roy
-          </h1>
+          <h1>Shantanu Roy</h1>
 
           <div className="home-titles">
             <p className="graduate-title">
@@ -35,11 +32,10 @@ function Home() {
 
         <div className="home-image">
           <img
-            src="src/assets/WhatsApp Image 2026-11-08 at 12.12.58.jpeg"
+            src={profileImage}
             alt="Portrait of Shantanu Roy"
           />
         </div>
-
       </div>
     </main>
   );
