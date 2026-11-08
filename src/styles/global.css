@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap');
+
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #25251f;
+  background: #f7f6f2;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  height: 90px;
+  padding: 0 9%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e6e3dc;
+}
+
+.nav-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.nav-logo span,
+.page h1 span {
+  color: #a58a6a;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-link {
+  font-size: 12px;
+  color: #77756f;
+  transition: color 0.25s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #25251f;
+}
+
+.nav-availability {
+  font-size: 12px;
+  border-bottom: 1px solid #a58a6a;
+  padding-bottom: 5px;
+}
+
+.page {
+  width: 82%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 110px 0;
+  flex: 1;
+}
+
+.eyebrow {
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: #928b7e;
+  margin-bottom: 30px;
+}
+
+.page h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(48px, 7vw, 88px);
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+}
+
+.page-description {
+  max-width: 580px;
+  color: #77756f;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.footer {
+  padding: 25px 9%;
+  border-top: 1px solid #e6e3dc;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  color: #928b7e;
+  font-size: 11px;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    height: auto;
+    min-height: 80px;
+    padding: 20px 6%;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .nav-links {
+    order: 3;
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 5px;
+    gap: 22px;
+  }
+
+  .nav-link {
+    white-space: nowrap;
+  }
+
+  .page {
+    width: 88%;
+    padding: 90px 0;
+  }
+
+  .footer {
+    padding: 22px 6%;
+    flex-direction: column;
+  }
+}
