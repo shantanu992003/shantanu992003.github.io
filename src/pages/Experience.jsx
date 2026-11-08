@@ -196,7 +196,7 @@ function ExperienceCard({ experience }) {
           alt={experience.imageLabel}
           style={{
             display: "block",
-            width: "115%",
+            width: "100%",
             maxWidth: "none",
             height: "auto",
             objectFit: "contain",
