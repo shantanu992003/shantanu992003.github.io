@@ -63,14 +63,7 @@ function AnimatedRoutes() {
           />
 
           {/* Individual portfolio pages */}
-          <Route
-            path="/about"
-            element={
-              <WebsiteLayout>
-                <About />
-              </WebsiteLayout>
-            }
-          />
+          <Route path="/about" element={<About />} />
 
           <Route
             path="/education"

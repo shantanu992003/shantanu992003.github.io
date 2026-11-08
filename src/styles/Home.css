@@ -146,19 +146,6 @@
   transform: scale(1.035);
 }
 
-/* Footer */
-
-.home-footer {
-  position: absolute;
-  bottom: 1.8rem;
-  left: 0;
-  right: 0;
-  text-align: center;
-  font-size: 0.65rem;
-  letter-spacing: 0.16em;
-  color: #99958d;
-}
-
 /* Animations */
 
 @keyframes pageFadeIn {

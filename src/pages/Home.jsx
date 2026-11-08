@@ -41,11 +41,6 @@ function Home() {
         </div>
 
       </div>
-
-      <p className="home-footer">
-        SYDNEY, AUSTRALIA · 2026
-      </p>
-
     </main>
   );
 }
