@@ -32,7 +32,7 @@ function Navbar() {
       </nav>
 
       <a className="nav-availability" href="mailto:YOUR_EMAIL">
-        Let's talk ↗
+        Let's talk
       </a>
     </header>
   );

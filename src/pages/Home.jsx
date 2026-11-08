@@ -1,18 +1,51 @@
+
+import { Link } from "react-router-dom";
+import "../styles/Home.css";
+
 function Home() {
   return (
-    <main className="page">
-      <p className="eyebrow">PORTFOLIO / 2026</p>
+    <main className="story-home">
 
-      <h1>
-        Building things<br />
-        that matter<span>.</span>
-      </h1>
+      <div className="home-content">
 
-      <p className="page-description">
-        Hello, I'm Shantanu Roy — a Computer Science graduate
-        interested in software engineering, artificial intelligence
-        and product development.
+        <div className="home-intro">
+
+          <h1>
+            Shantanu Roy
+          </h1>
+
+          <div className="home-titles">
+            <p className="graduate-title">
+              Computer Science Graduate
+            </p>
+
+            <p className="professional-titles">
+              Software Developer · Solutions Designer · Technology Consultant
+            </p>
+
+            <p className="personal-title">
+              Self-proclaimed Music & Cats Enthusiast
+            </p>
+          </div>
+
+          <Link to="/about" className="story-link">
+            Read about me
+          </Link>
+        </div>
+
+        <div className="home-image">
+          <img
+            src="src/assets/WhatsApp Image 2026-11-08 at 12.12.58.jpeg"
+            alt="Portrait of Shantanu Roy"
+          />
+        </div>
+
+      </div>
+
+      <p className="home-footer">
+        SYDNEY, AUSTRALIA · 2026
       </p>
+
     </main>
   );
 }

@@ -1,34 +1,123 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
+
+import { AnimatePresence, motion } from "framer-motion";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 import Home from "./pages/Home";
+import Website from "./pages/Website";
 import About from "./pages/About";
 import Education from "./pages/Education";
 import Experience from "./pages/Experience";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 
+// Navbar and footer for the full portfolio
+function WebsiteLayout({ children }) {
+  return (
+    <>
+      <Navbar />
+      {children}
+      <Footer />
+    </>
+  );
+}
+
+// Smooth page transition wrapper
+function AnimatedRoutes() {
+  const location = useLocation();
+
+  return (
+    <AnimatePresence mode="wait" initial={false}>
+      <motion.div
+        key={location.pathname}
+        initial={{ opacity: 0, y: 15 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -10 }}
+        transition={{
+          duration: 0.45,
+          ease: [0.22, 1, 0.36, 1],
+        }}
+        style={{ width: "100%", minHeight: "100vh" }}
+      >
+        <Routes location={location}>
+
+          {/* Minimal homepage */}
+          <Route path="/" element={<Home />} />
+
+          {/* Full portfolio landing page */}
+          <Route
+            path="/website"
+            element={
+              <WebsiteLayout>
+                <Website />
+              </WebsiteLayout>
+            }
+          />
+
+          {/* Individual portfolio pages */}
+          <Route
+            path="/about"
+            element={
+              <WebsiteLayout>
+                <About />
+              </WebsiteLayout>
+            }
+          />
+
+          <Route
+            path="/education"
+            element={
+              <WebsiteLayout>
+                <Education />
+              </WebsiteLayout>
+            }
+          />
+
+          <Route
+            path="/experience"
+            element={
+              <WebsiteLayout>
+                <Experience />
+              </WebsiteLayout>
+            }
+          />
+
+          <Route
+            path="/projects"
+            element={
+              <WebsiteLayout>
+                <Projects />
+              </WebsiteLayout>
+            }
+          />
+
+          <Route
+            path="/contact"
+            element={
+              <WebsiteLayout>
+                <Contact />
+              </WebsiteLayout>
+            }
+          />
+
+        </Routes>
+      </motion.div>
+    </AnimatePresence>
+  );
+}
+
 function App() {
   return (
     <BrowserRouter>
-      <div className="app">
-
-        <Navbar />
-
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/education" element={<Education />} />
-          <Route path="/experience" element={<Experience />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-
-        <Footer />
-
-      </div>
+      <AnimatedRoutes />
     </BrowserRouter>
   );
 }
