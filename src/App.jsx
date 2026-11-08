@@ -16,7 +16,6 @@ import Website from "./pages/Website";
 import About from "./pages/About";
 import Education from "./pages/Education";
 import Experience from "./pages/Experience";
-import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 
 // Navbar and footer for the full portfolio
@@ -65,29 +64,13 @@ function AnimatedRoutes() {
           {/* Individual portfolio pages */}
           <Route path="/about" element={<About />} />
 
-          <Route
-            path="/education"
-            element={
-              <WebsiteLayout>
-                <Education />
-              </WebsiteLayout>
-            }
-          />
+          <Route path="/education" element={<Education />} />
 
           <Route
             path="/experience"
             element={
               <WebsiteLayout>
                 <Experience />
-              </WebsiteLayout>
-            }
-          />
-
-          <Route
-            path="/projects"
-            element={
-              <WebsiteLayout>
-                <Projects />
               </WebsiteLayout>
             }
           />

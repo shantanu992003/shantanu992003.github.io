@@ -82,7 +82,7 @@ function About() {
       {/* SECTION 01 — INTRODUCTION */}
       <section className="about-hero" id="introduction">
         <div className="about-heading">
-          <p className="about-eyebrow">01 — A LITTLE INTRODUCTION</p>
+          <p className="about-eyebrow">A LITTLE INTRODUCTION</p>
 
           <h1>
             Beyond the
@@ -133,7 +133,7 @@ function About() {
       {/* SECTION 02 — APPROACH */}
       <section className="about-approach" id="approach">
         <div className="about-section-heading">
-          <p className="about-eyebrow">02 — HOW I THINK</p>
+          <p className="about-eyebrow">HOW I THINK</p>
 
           <h2>
             Technology is a tool.
@@ -188,7 +188,7 @@ function About() {
       {/* SECTION 03 — TIMELINE */}
       <section className="about-timeline" id="timeline">
         <div className="about-section-heading">
-          <p className="about-eyebrow">03 — A FEW YEARS IN THE MAKING</p>
+          <p className="about-eyebrow">A FEW YEARS IN THE MAKING</p>
 
           <h2>
             A timeline of
@@ -263,7 +263,7 @@ function About() {
       {/* SECTION 04 — PERSONAL SIDE AND MUSIC */}
       <section className="about-personal" id="outside-work">
         <div className="about-personal-content">
-          <p className="about-eyebrow">04 — OUTSIDE THE SCREEN</p>
+          <p className="about-eyebrow">OUTSIDE THE SCREEN</p>
 
           <h2>
             There's more to me
@@ -324,7 +324,7 @@ function About() {
       {/* SECTION 05 — WHAT'S NEXT */}
       <section className="about-next" id="whats-next">
         <div className="about-next-content">
-          <p className="about-eyebrow">05 — WHAT'S NEXT</p>
+          <p className="about-eyebrow">WHAT'S NEXT</p>
 
           <h2>
             Still learning.
