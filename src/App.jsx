@@ -1,4 +1,5 @@
 
+import { useLayoutEffect } from "react";
 import {
   BrowserRouter,
   Routes,
@@ -29,6 +30,14 @@ function WebsiteLayout({ children }) {
   );
 }
 
+function ScrollToTopOnMount() {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  return null;
+}
+
 // Smooth page transition wrapper
 function AnimatedRoutes() {
   const location = useLocation();
@@ -46,6 +55,7 @@ function AnimatedRoutes() {
         }}
         style={{ width: "100%", minHeight: "100vh" }}
       >
+        <ScrollToTopOnMount />
         <Routes location={location}>
 
           {/* Minimal homepage */}
@@ -68,12 +78,7 @@ function AnimatedRoutes() {
 
           <Route
             path="/experience"
-            element={
-              <WebsiteLayout>
-                <Experience />
-              </WebsiteLayout>
-            }
-          />
+            element={<Experience />} />
 
           <Route
             path="/contact"
