@@ -6,14 +6,13 @@ function Navbar() {
     { name: "About", path: "/about" },
     { name: "Education", path: "/education" },
     { name: "Experience", path: "/experience" },
-    { name: "Projects", path: "/projects" },
     { name: "Contact", path: "/contact" },
   ];
 
   return (
     <header className="navbar">
       <NavLink to="/" className="nav-logo">
-        SR<span>.</span>
+        SR
       </NavLink>
 
       <nav className="nav-links">
@@ -30,10 +29,6 @@ function Navbar() {
           </NavLink>
         ))}
       </nav>
-
-      <a className="nav-availability" href="mailto:YOUR_EMAIL">
-        Let's talk
-      </a>
     </header>
   );
 }

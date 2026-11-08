@@ -1,0 +1,57 @@
+
+.not-found-page {
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 5rem 8vw;
+  background: #f7f6f2;
+  color: #25251f;
+  box-sizing: border-box;
+}
+
+.not-found-eyebrow {
+  font-size: 0.7rem;
+  letter-spacing: 0.17em;
+  font-weight: 600;
+  color: #a58a6a;
+}
+
+.not-found-page h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(3.5rem, 8vw, 7rem);
+  font-weight: 400;
+  line-height: 0.98;
+  letter-spacing: -0.06em;
+  margin: 1.5rem 0;
+}
+
+.not-found-page h1 span {
+  color: #a58a6a;
+}
+
+.not-found-description {
+  max-width: 420px;
+  line-height: 1.8;
+  color: #77756f;
+  margin-bottom: 2rem;
+}
+
+.not-found-link {
+  display: inline-flex;
+  gap: 1.5rem;
+  align-items: center;
+  background: #25251f;
+  color: #fff;
+  padding: 1rem 1.8rem;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: 0.3s ease;
+}
+
+.not-found-link:hover {
+  background: transparent;
+  color: #25251f;
+  outline: 1px solid #25251f;
+}

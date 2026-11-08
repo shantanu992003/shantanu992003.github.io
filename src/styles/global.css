@@ -110,7 +110,7 @@ a {
   padding: 25px 9%;
   border-top: 1px solid #e6e3dc;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 15px;
   color: #928b7e;
   font-size: 11px;

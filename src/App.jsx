@@ -18,6 +18,7 @@ import About from "./pages/About";
 import Education from "./pages/Education";
 import Experience from "./pages/Experience";
 import Contact from "./pages/Contact";
+import NotFound from "./pages/NotFound";
 
 // Navbar and footer for the full portfolio
 function WebsiteLayout({ children }) {
@@ -89,6 +90,14 @@ function AnimatedRoutes() {
             }
           />
 
+          <Route
+            path="*"
+            element={
+              <WebsiteLayout>
+                <NotFound />
+              </WebsiteLayout>
+          }
+          />
         </Routes>
       </motion.div>
     </AnimatePresence>
